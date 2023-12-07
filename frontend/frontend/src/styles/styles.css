@@ -1,0 +1,159 @@
+/* Hauptfarben */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #28a745;
+    --tertiary-color: #ffc107;
+    --quaternary-color: #dc3545;
+}
+
+/* Schriftarten */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+  }
+
+/* Buttons */
+.button-primary {
+    background-color: var(--primary-color);
+    color: white;
+    /* Weitere Stile für Buttons */
+}
+
+.button-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+    /* Weitere Stile für Buttons */
+}
+
+/* Formulare */
+input, select, textarea {
+    border: 1px solid var(--tertiary-color);
+    /* Weitere Stile für Formularelemente */
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--primary-color);
+    /* Weitere Stile für die Navigation */
+}
+
+.header {
+    background-color: #ffcc5c;
+    padding: 10px 0;
+  }
+  
+  .toggle-sidebar-button {
+    padding: 10px 20px; /* innere Abstände hinzufügen */
+    margin: 0 10px; /* einen Außenabstand hinzufügen */
+    background-color: #f0ad4e; /* Hintergrundfarbe setzen */
+    border: none; /* Rahmen entfernen */
+    border-radius: 5px; /* Ecken abrunden */
+    cursor: pointer; /* Cursor ändern, wenn der Mauszeiger über dem Button ist */
+    font-weight: bold; /* Schrift fetter machen */
+    color: white; /* Textfarbe */
+  }
+  
+  /* Bei Hover-Effekt für den Button */
+  .toggle-sidebar-button:hover {
+    background-color: #ec971f; /* Hintergrundfarbe beim Hover ändern */
+  }
+  
+  .header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .header-home-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .header-username {
+    color: white;
+    font-weight: bold;
+  }
+
+/* Footer */
+.footer {
+    background-color: var(--tertiary-color); /* Dunkler Hintergrund */
+    color: white; /* Weiße Textfarbe */
+    text-align: center; /* Text zentrieren */
+    padding: 10px; /* Etwas Abstand innen */
+    position: fixed; /* Fixieren am unteren Rand des Bildschirms */
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    margin: auto; /* Zentrieren des Inhalts */
+  }
+
+/* Hauptinhalt zentrieren */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+  }
+  
+  /* Formular zentrieren und stilisieren */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    align-items: center;
+  }
+  
+  /* Input-Felder und Buttons anpassen */
+  input[type="text"],
+  input[type="password"],
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #f0ad4e; /* Bootstrap's btn-warning Farbe */
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ec971f; /* Etwas dunkler für Hover-Effekt */
+  }
+
+  /* Kleinere Bildschirme */
+@media (max-width: 768px) {
+    .sidebar {
+      display: none; /* Sidebar auf kleinen Geräten ausblenden */
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    /* Header und Footer anpassen */
+    header, footer {
+      text-align: center;
+    }
+  }
+  
+  

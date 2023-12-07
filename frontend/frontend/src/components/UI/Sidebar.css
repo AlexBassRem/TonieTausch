@@ -1,0 +1,52 @@
+/* Grundlegende Stilisierung der Sidebar */
+.navMain {
+    width: 250px; /* Breite der Sidebar im ausgeklappten Zustand */
+    height: 100vh; /* Höhe der Sidebar */
+    background-color: #ee6f6f; /* Hintergrundfarbe der Sidebar */
+    color: white; /* Textfarbe */
+    padding: 20px; /* Innenabstand */
+    position: fixed; /* Fixierte Position */
+    left: 0; /* Position links im Viewport */
+    top: 0; /* Position oben im Viewport */
+    transition: left 0.3s ease; /* Animation für das Ein-/Ausklappen */
+}
+
+/* Stil für die eingeklappte Sidebar */
+.navMain.collapsed {
+    left: -300px; /* Verschiebt die Sidebar außerhalb des Bildschirms */
+}
+
+/* Stil für die Navigationslinks */
+.navMain a {
+    color: white; /* Farbe der Links */
+    text-decoration: none; /* Keine Unterstreichung */
+    display: block; /* Block-Level-Element */
+    margin: 10px 0; /* Abstand oben und unten */
+    transition: color 0.3s ease; /* Farbübergang beim Hover */
+}
+
+/* Hover-Effekt für die Links */
+.navMain a:hover {
+    color: #ddd; /* Farbe beim Hover */
+}
+
+/* Stil für die Listenelemente */
+.navMain li {
+    list-style-type: none; /* Keine Listensymbole */
+    margin-left: 0px; /* Negative Margin, um Padding auszugleichen */
+}
+
+/* Stil für den Toggle-Button */
+.navMain button {
+    background-color: #444; /* Hintergrundfarbe des Buttons */
+    color: white; /* Textfarbe */
+    border: none; /* Kein Rand */
+    padding: 10px 20px; /* Polsterung */
+    margin-bottom: 20px; /* Abstand nach unten */
+    cursor: pointer; /* Cursor-Style */
+}
+
+/* Stil für den Hover-Effekt des Buttons */
+.navMain button:hover {
+    background-color: #555; /* Hintergrundfarbe beim Hover */
+}
